@@ -20,6 +20,8 @@ public class CreditsScroll : Container
     private const float LicenseTextWidthFraction = 0.85f;
     private const float LicenseTextSpeedMultiplier = 3;
 
+    private const float FastForwardTextSpeedMultiplier = 3;
+
     private const int DestroyTopThreshold = 10;
 
     // These are used to detect the team lead role names properly
@@ -216,6 +218,18 @@ public class CreditsScroll : Container
         }
 
         dynamicParts.Clear();
+    }
+
+    private void OnFastForwardPressed()
+    {
+        if (ScrollSpeed > normalScrollSpeed)
+        {
+            ScrollSpeed = normalScrollSpeed;
+        }
+        else
+        {
+            ScrollSpeed = normalScrollSpeed * FastForwardTextSpeedMultiplier;
+        }
     }
 
     private void LoadCurrentDevelopers()
