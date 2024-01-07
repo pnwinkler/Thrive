@@ -2169,6 +2169,10 @@ msgstr "Error: Failed to delete one or more save files."
 msgid "FAILED_SAVE_DELETION"
 msgstr "Error: Save deletion failed"
 
+# ../src/gui_common/CreditsScroll.tcsn: TODO
+msgid "FAST_FORWARD"
+msgstr "Fast forward"
+
 #: ../src/saving/SaveList.tscn:139
 msgid "FAILED_SAVE_DELETION_DESCRIPTION"
 msgstr "The save file could not be deleted."
