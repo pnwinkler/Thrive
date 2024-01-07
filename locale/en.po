@@ -2169,13 +2169,13 @@ msgstr "Error: Failed to delete one or more save files."
 msgid "FAILED_SAVE_DELETION"
 msgstr "Error: Save deletion failed"
 
-#: ../src/general/MainMenu.tscn:966
-msgid "FAST_FORWARD"
-msgstr "Fast forward"
-
 #: ../src/saving/SaveList.tscn:139
 msgid "FAILED_SAVE_DELETION_DESCRIPTION"
 msgstr "The save file could not be deleted."
+
+#: ../src/general/MainMenu.tscn:966
+msgid "FAST_FORWARD"
+msgstr "Fast forward"
 
 #: ../src/microbe_stage/editor/BehaviourEditorSubComponent.tscn:194
 msgid "FEARFUL"
