@@ -448,7 +448,11 @@ public class CreditsScroll : Container
         assetsLicenseLabel.OnBecomeVisible += () =>
         {
             // As licenses are boring speed this up
-            ScrollSpeed = normalScrollSpeed * LicenseTextSpeedMultiplier;
+            float provisionalLicenseSpeed = normalScrollSpeed * LicenseTextSpeedMultiplier;
+            if (ScrollSpeed < provisionalLicenseSpeed)
+            {
+                ScrollSpeed = provisionalLicenseSpeed;
+            }
 
             if (ShowGPLLicense && !steamVersion)
             {
